@@ -74,7 +74,7 @@ And that's it. Run the [app.js](../master/app.js) script by entering
 ```
 $ sudo node app.js
 ```
-into your console and you are good to go! Your Amazon Dash button is now a switch for your Philips Hue setup. Congrats! 🎉
+into your console and you are good to go! Your Amazon Dash button is now a switch for your Philips Hue setup.
 
 # LaunchDaemon
 If you do not want to manually run the script with the `sudo node app.js` command every time your computer boots up or you simply dislike having an open console window running the script 24/7, I highly recommend using a LaunchDaemon for the script so macOS will run it in the background every time you start your computer.
@@ -96,6 +96,8 @@ sudo cp ~/Desktop/huedash.plist /Library/LaunchDaemons/huedash.plist && sudo cho
 * checks whether all of your lightbulbs are turned on or off,
 * changes their status to either off or on with a white value of 500 and 100% brightness,
 * and prints either "Turning lights on..." or "Turning lights off..." in the console once it changed the lightbulbs's color.
+
+Congrats! 🎉
 ---
 
 I have not found out yet why running the script with `sudo` is necessairy. I would be very happy about any pull requests and/or [emails](mailto:hi@maxrugen.com) explaining me why that is the case.
