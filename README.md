@@ -96,6 +96,7 @@ sudo cp ~/Desktop/huedash.plist /Library/LaunchDaemons/huedash.plist && sudo cho
 * checks whether all of your lightbulbs are turned on or off,
 * changes their status to either off or on with a white value of 500 and 100% brightness,
 * and prints either "Turning lights on..." or "Turning lights off..." in the console once it changed the lightbulbs's color.
+
 Congrats! 🎉
 
 ---
