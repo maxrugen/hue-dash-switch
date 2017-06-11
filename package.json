@@ -1,5 +1,6 @@
 {
   "name": "hue-dash-switch",
+  "version": "0.1.0",
   "description": "Node.js project turning your Amazon Dash button into a switch for your Philips Hue setup.",
   "author": "Max Rugen",
   "contributors": [
@@ -19,9 +20,13 @@
   "bugs": {
     "url": "https://github.com/maxrugen/hue-dash-switch/issues"
   },
-  "devDependencies": {
+  "scripts": {
+    "findButton": "cd node_modules/node-dash-button && node bin/findbutton",
+    "registerUser": "node registerUser.js"
+  },
+  "dependencies": {
     "dotenv": "^4.0.0",
-    "hue-node-api": "^2.4.2",
-    "node-dash-button": "^0.6.1"
+    "node-dash-button": "~0.6.1",
+    "node-hue-api": "^2.4.2"
   }
 }
