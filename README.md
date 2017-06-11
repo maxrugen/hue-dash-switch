@@ -38,7 +38,7 @@ Dotenv, the required package for .env usage, will be installed in the next step.
 Install the dependencies using ```npm``` in your Terminal.
 
 ```
-$ npm install node-hue-api node-dash-button dotenv
+npm install
 ```
 Finally, download the Amazon app to your smartphone ([iOS](https://itunes.apple.com/de/app/amazon/id348712880?mt=8), [Android](https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping)).
 
@@ -50,7 +50,7 @@ To make our final work, we need to know the button's MAC address. The node-dash-
 
 To run the network listener by running
 ```
-$ node node_modules/node-dash-button && node bin/findbutton
+npm run findButton
 ```
 then press on your Dash button. Its MAC address will now appear in the console.
 

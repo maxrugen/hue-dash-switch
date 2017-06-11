@@ -1,0 +1,12 @@
+{
+  "name": "hue-dash-switch",
+  "version": "0.1.0",
+  "scripts": {
+    "findButton": "cd node_modules/node-dash-button && node bin/findbutton"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "node-dash-button": "~0.6.1",
+    "node-hue-api": "^2.4.2"
+  }
+}
