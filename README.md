@@ -94,7 +94,7 @@ sudo cp ~/Desktop/huedash.plist /Library/LaunchDaemons/huedash.plist && sudo cho
 * imports the provided information from the .env file,
 * prints "Button press detected" in the console whenever you press your Dash button,
 * checks whether all of your lightbulbs are turned on or off,
-* changes their status to either off or on with a white value of 500 and 100% brightness,
+* changes their status to either off or on to the last known status,
 * and prints either "Turning lights on..." or "Turning lights off..." in the console once it changed the lightbulbs's color.
 
 Congrats! 🎉
