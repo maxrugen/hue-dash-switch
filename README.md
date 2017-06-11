@@ -5,15 +5,15 @@ Amazon's Dash button is an amazing little device. Why not use the button's capab
 *Note that this tutorial will show you how to control your entire Hue lightbulb setup with a Dash button rather than single lightbulbs. If you are interested in controlling single lightbulbs, Daniel Gallo posted a [great tutorial](http://www.danielgallo.co.uk/post/hack-an-amazon-dash-button-to-control-philips-hue-lights/) on just that.*
 
 # Content
-* [Node.js](https://github.com/maxrugen/hue-dash-switch#nodejs)
-* [About .env](https://github.com/maxrugen/hue-dash-switch#env)
-* [Installing Dependencies](https://github.com/maxrugen/hue-dash-switch#installing-dependencies)
-* [Connecting Button to WiFi](https://github.com/maxrugen/hue-dash-switch#connecting-button-to-wifi)
-* [Button's MAC address](https://github.com/maxrugen/hue-dash-switch#buttons-mac-address)
-* [Bridge's IP address](https://github.com/maxrugen/hue-dash-switch#buttons-ip-address)
-* [Creating new User in Bridge](https://github.com/maxrugen/hue-dash-switch#creating-new-user-in-bridge)
-* [Running Script](https://github.com/maxrugen/hue-dash-switch#running-script)
-* [LaunchDaemon](https://github.com/maxrugen/hue-dash-switch#launchdaemon)
+* [Node.js](#nodejs)
+* [About .env](#env)
+* [Installing Dependencies](#installing-dependencies)
+* [Connecting Button to WiFi](#connecting-button-to-wifi)
+* [Button's MAC address](#buttons-mac-address)
+* [Bridge's IP address](#buttons-ip-address)
+* [Creating new User in Bridge](#creating-new-user-in-bridge)
+* [Running Script](#running-script)
+* [LaunchDaemon](#launchdaemon)
 
 # Node.js
 This project is powered by Node.js. You need to have it installed on your computer before advancing any further. To check whether Node.js is running on your computer, run
