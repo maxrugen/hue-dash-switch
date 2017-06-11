@@ -1,30 +1,33 @@
 require('dotenv').load();
-var dashButton = require('node-dash-button'),
-    hue = require("node-hue-api");
-    dash = dashButton(process.env.DASHMACADDRESS),
-    HueApi = hue.HueApi,
-    hueIp = process.env.HUEIP,
-    hueUsername = process.env.HUEUSERNAME,
-    lightState = hue.lightState,
-    api = new HueApi(hueIp, hueUsername),
-    on = false;
+const dashButton = require('node-dash-button');
+const hue = require("node-hue-api");
 
-state = lightState.create()
+const HueApi = hue.HueApi;
+const hueIp = process.env.HUEIP;
+const hueUsername = process.env.HUEUSERNAME;
 
-dash.on("detected", function() {
-    console.log("Button press detected");
+const lightState = hue.lightState;
+const api = new HueApi(hueIp, hueUsername);
+const state = lightState.create();
 
-    if (!on) {
-        // Turn on the group of lights with warm white value of 500 and 100% brightness.
-        api.setGroupLightState(0, state.on().white(500, 100))
-            .then(console.log("Turning lights on..."))
-            .done();
-    } else {
-        // Turn off the group of lights
-        api.setGroupLightState(0, state.off())
-            .then(console.log("Turning lights off..."))
-            .done();
-    }
+const dashMacAddress = process.env.DASHMACADDRESS;
+const dash = dashButton(dashMacAddress);
 
-    on = !on;
+dash.on("detected", dashId => {
+    console.log("Button press detected", dashId);
+
+    api.lights().then(result => {
+        const lights = result.lights;
+
+        lights.forEach(light => {
+            const isOn = light.state.on;
+
+            if (isOn) {
+                api.setLightState(light.id, state.off()).done();
+            } else {
+                api.setLightState(light.id, state.on()).done();
+            }
+        });
+    });
+
 });
