@@ -18,11 +18,11 @@ Amazon's Dash button is an amazing little device. Why not use the button's capab
 # Node.js
 This project is powered by Node.js. You need to have it installed on your computer before advancing any further. To check whether Node.js is running on your computer, run
 ```
-$ node -v
+node -v
 ```
 If it outputs a version number, you are good to go. If not, download and install the lastest version of Node.js from the project's [website](https://nodejs.org/) or with Homebrew;
 ```
-$ brew install node
+brew install node
 ```
 
 # .env
@@ -72,12 +72,12 @@ npm run registerUser
 # Running Script
 And that's it. Run the [app.js](../master/app.js) script by entering
 ```
-$ sudo node app.js
+node app.js
 ```
 into your console and you are good to go! Your Amazon Dash button is now a switch for your Philips Hue setup.
 
 # LaunchDaemon
-If you do not want to manually run the script with the `sudo node app.js` command every time your computer boots up or you simply dislike having an open console window running the script 24/7, I highly recommend using a LaunchDaemon for the script so macOS will run it in the background every time you start your computer.
+If you do not want to manually run the script with the `node app.js` command every time your computer boots up or you simply dislike having an open console window running the script 24/7, I highly recommend using a LaunchDaemon for the script so macOS will run it in the background every time you start your computer.
 
 Copy the given [huedash.plist](../master/huedash.plist) file to your Desktop.
 
