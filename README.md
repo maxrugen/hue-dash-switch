@@ -65,7 +65,7 @@ Enter this IP address after "HUEIP" in the given [.env](../master/.env) file.
 # Creating new User in Bridge
 To access your Hue lightbulbs, you will need to register a new user in your Bridge by pressing the link button on the Bridge and running the given [registerUser.js](../master/registerUser.js) file with Node.js;
 ```
-$ node registerUser.js
+npm run registerUser
 ```
 
 
