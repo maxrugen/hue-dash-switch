@@ -46,7 +46,7 @@ Finally, download the Amazon app to your smartphone ([iOS](https://itunes.apple.
 Connect the Dash button to the Internet by following the button's default setup process using Amazon's app up until the product selection page. Make sure that you **do not select any products** in this very step! Simply exit the setup by closing the app, otherwise you would be buying something from Amazon every time you press the button.
 
 # Button's MAC address
-To make our final work, we need to know the button's MAC address. The node-dash-button library's findbutton-script listens for ARP requests on your local network, just like the ones being sent out with every click of the button.
+To make our final script work, we need to know the button's MAC address. The node-dash-button library's findbutton-script listens for ARP requests on your local network, just like the ones being sent out with every click of the button.
 
 To run the network listener by running
 ```
