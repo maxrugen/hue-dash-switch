@@ -98,7 +98,3 @@ sudo cp ~/Desktop/huedash.plist /Library/LaunchDaemons/huedash.plist && sudo cho
 * and prints either "Turning lights on..." or "Turning lights off..." in the console once it changed the lightbulbs's color.
 
 Congrats! 🎉
-
----
-
-I have not found out yet why running the script with `sudo` is necessairy. I would be very happy about any pull requests and/or [emails](mailto:hi@maxrugen.com) explaining me why that is the case.
