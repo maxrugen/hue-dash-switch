@@ -1,4 +1,4 @@
-# hue-dash-switch
+# hue-dash-switch [![Build Status](https://travis-ci.org/maxrugen/hue-dash-switch.svg?branch=master)](https://travis-ci.org/maxrugen/hue-dash-switch)
 
 Amazon's Dash button is an amazing little device. Why not use the button's capabilities to its fullest and turn it into a remote for my Philips Hue setup rather than a simple tool for quicker ordering?
 
