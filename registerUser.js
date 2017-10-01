@@ -1,15 +1,16 @@
 require('dotenv').load();
-var HueApi = require("node-hue-api").HueApi;
-var hostname = process.env.HUEIP,
-    newUserName = null;  // The Hue Bridge will generate a User ID
-    userDescription = "Amazon Dash Button User";
-var displayUserResult = function(result) {
+const hueAPI = require("node-hue-api").HueApi;
+const hueIP = process.env.HUEIP,
+const newUserName = null;  // The Hue Bridge will generate a User ID
+const userDescription = "Amazon Dash Button User";
+
+let displayUserResult = function(result) {
     console.log("Created user: " + JSON.stringify(result));
 };
-var displayError = function(err) {
+let displayError = function(err) {
     console.log(err);
 };
-var hue = new HueApi();
+let hue = new hueAPI();
 hue.registerUser(hostname, newUserName, userDescription)
     .then(displayUserResult)
     .fail(displayError)

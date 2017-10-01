@@ -1,26 +1,24 @@
 require('dotenv').load();
 const dashButton = require('node-dash-button');
 const hue = require("node-hue-api");
-
-const HueApi = hue.HueApi;
-const hueIp = process.env.HUEIP;
+const hueAPI = hue.HueApi;
+const hueIP = process.env.HUEIP;
 const hueUsername = process.env.HUEUSERNAME;
+const dashMAC = process.env.DASHMACADDRESS;
+const dash = dashButton(dashMAC);
 
-const lightState = hue.lightState;
-const api = new HueApi(hueIp, hueUsername);
-const state = lightState.create();
-
-const dashMacAddress = process.env.DASHMACADDRESS;
-const dash = dashButton(dashMacAddress);
+let lightState = hue.lightState;
+const api = new hueAPI(hueIP, hueUsername);
+let state = lightState.create();
 
 dash.on("detected", dashId => {
     console.log("Button press detected", dashId);
 
     api.lights().then(result => {
-        const lights = result.lights;
+        let lights = result.lights;
 
         lights.forEach(light => {
-            const isOn = light.state.on;
+            let isOn = light.state.on;
 
             if (isOn) {
                 api.setLightState(light.id, state.off()).done();
