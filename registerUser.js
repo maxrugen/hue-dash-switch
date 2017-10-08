@@ -11,7 +11,7 @@ let displayError = function(err) {
     console.log(err);
 };
 let hue = new hueAPI();
-hue.registerUser(hostname, newUserName, userDescription)
+hue.registerUser(hueIP, newUserName, userDescription)
     .then(displayUserResult)
     .fail(displayError)
     .done();
