@@ -3,7 +3,7 @@
 
 Amazon's Dash button is an amazing little device. Why not use the button's capabilities to its fullest and turn it into a remote for my Philips Hue setup rather than a simple tool for quicker ordering?
 
-![hue-dash-switch logo](https://maxrugen.com/logo.png)
+<img src="https://raw.githubusercontent.com/maxrugen/hue-dash-switch/master/logo.png" width="250" height="250">
 
 
 *Note that this tutorial will show you how to control your entire Hue lightbulb setup with a Dash button rather than single lightbulbs. If you are interested in controlling single lightbulbs, Daniel Gallo posted a [great tutorial](http://www.danielgallo.co.uk/post/hack-an-amazon-dash-button-to-control-philips-hue-lights/) on just that.*
