@@ -61,7 +61,7 @@ then press on your Dash button. Its MAC address will now appear in the console.
 Enter the MAC address after "DASHMACADDRESS" in the given [.env](../master/.env) file.
 
 ## Button's IP address
-You need to find out its IP address so the script can talk to your Bridge. Open Philip's Hue companion app and navigate to Settings -> Hue bridges -> i -> Network settings. Temporarily switch off the DHCP toggle — the app will show you the Bridge's IP address.
+You need to find out its IP address so the script can talk to your Bridge. Open Philip's Hue companion app and navigate to Settings → Hue bridges →  i. The IP address is located between your bridge's ID and MAC address.
 
 Enter this IP address after "HUEIP" in the given [.env](../master/.env) file.
 
