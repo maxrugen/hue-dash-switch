@@ -83,13 +83,12 @@ into your console and you are good to go! Your Amazon Dash button is now a switc
 ## LaunchDaemon
 If you do not want to manually run the script with the `node app.js` command every time your computer boots up or you simply dislike having an open console window running the script 24/7, I highly recommend using a LaunchDaemon for the script so macOS will run it in the background every time you start your computer.
 
-Copy the given [huedash.plist](../master/huedash.plist) file to your Desktop.
 
-**In the .plist file, edit $YOURNAME to your name and $SCRIPTPATH to app.js' path.** For me, that's com.maxrugen.huedash and ~/Developer/dash.
+**In the given [huedash.plist](../master/huedash.plist) file, edit $YOURNAME to your name and $SCRIPTPATH to app.js' path.** For me, that's com.maxrugen.huedash and ~/Developer/dash.
 
-Now, copy the .plist into the LaunchDaemon folder, set the file's owner to root and edit the file's rights using the following command. Again, you **need to replace $YOURNAME with the name you just provided in the .plist**.
+Now, copy the [huedash.plist](../master/huedash.plist) into the LaunchDaemon folder, set the file's owner to root and edit the file's rights using the following command. Again, you **need to replace $YOURNAME with the name you just provided in the .plist**.
 ```
-sudo cp ~/Desktop/huedash.plist /Library/LaunchDaemons/huedash.plist && sudo chown root /Library/LaunchDaemons/huedash.plist && sudo chmod 644 /Library/LaunchDaemons/huedash.plist && sudo launchctl load /Library/LaunchDaemons/huedash.plist && sudo launchctl start com.$YOURNAME.huedash
+sudo cp huedash.plist /Library/LaunchDaemons/huedash.plist && sudo chown root /Library/LaunchDaemons/huedash.plist && sudo chmod 644 /Library/LaunchDaemons/huedash.plist && sudo launchctl load /Library/LaunchDaemons/huedash.plist && sudo launchctl start com.$YOURNAME.huedash
 ```
 
 ## Round Up
