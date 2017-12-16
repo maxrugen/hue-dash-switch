@@ -39,7 +39,7 @@ Dotenv, the required package for .env usage, will be installed in the next step.
 ## Installing Dependencies
 
 
-Install the dependencies using ```npm``` in your Terminal.
+Install the dependencies using `npm` in your Terminal.
 
 ```
 npm install
@@ -50,11 +50,11 @@ Finally, download the Amazon app to your smartphone ([iOS](https://itunes.apple.
 Connect the Dash button to the Internet by following the button's default setup process using Amazon's app up until the product selection page. Make sure that you **do not select any products** in this very step! Simply exit the setup by closing the app, otherwise you would be buying something from Amazon every time you press the button.
 
 ## Button's MAC address
-To make our final script work, we need to know the button's MAC address. The node-dash-button library's findbutton-script listens for ARP requests on your local network, just like the ones being sent out with every click of the button.
+To make our final script work, we need to know the button's MAC address. The node-dash-button library's findButton-script listens for ARP requests on your local network, just like the ones being sent out with every click of the button.
 
 To run the network listener by running
 ```
-npm run findButton
+sudo npm run findButton
 ```
 then press on your Dash button. Its MAC address will now appear in the console.
 
@@ -69,14 +69,14 @@ Enter this IP address after "HUEIP" in the given [.env](../master/.env) file.
 ## Creating new User in Bridge
 To access your Hue lightbulbs, you will need to register a new user in your Bridge by pressing the link button on the Bridge and running the given [registerUser.js](../master/registerUser.js) file with Node.js;
 ```
-npm run registerUser
+sudo npm run registerUser
 ```
 
 
 ## Running Script
 And that's it. Run the [app.js](../master/app.js) script by entering
 ```
-node app.js
+sudo npm 
 ```
 into your console and you are good to go! Your Amazon Dash button is now a switch for your Philips Hue setup.
 
@@ -97,8 +97,6 @@ sudo cp ~/Desktop/huedash.plist /Library/LaunchDaemons/huedash.plist && sudo cho
 * starts running every time you boot your computer,
 * imports the provided information from the .env file,
 * prints "Button press detected" in the console whenever you press your Dash button,
-* checks whether all of your lightbulbs are turned on or off,
-* changes their status to either off or on to the last known status,
-* and prints either "Turning lights on..." or "Turning lights off..." in the console once it changed the lightbulbs's color.
-
+* checks whether all of your lightbulbs are turned on or off and
+* changes their status the opposite of the last known status!
 Congrats! 🎉

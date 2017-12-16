@@ -24,12 +24,13 @@
   },
   "scripts": {
     "findButton": "cd node_modules/node-dash-button && node bin/findbutton",
-    "registerUser": "node registerUser.js"
+    "registerUser": "node registerUser.js",
+    "start": "node app.js"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
     "node-dash-button": "~0.6.1",
     "node-hue-api": "^2.4.2"
   },
-  "license" : "MIT"
+  "license": "MIT"
 }
