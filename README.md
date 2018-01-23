@@ -76,7 +76,7 @@ sudo npm run registerUser
 ## Running Script
 And that's it. Run the [app.js](../master/app.js) script by entering
 ```
-sudo npm 
+sudo npm start
 ```
 into your console and you are good to go! Your Amazon Dash button is now a switch for your Philips Hue setup.
 
